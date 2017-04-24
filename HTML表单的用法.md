@@ -4,7 +4,7 @@
 - input标签的"placeholder"属性用于展示提示语
 - label标签用于关联控件常与input标签一起使用 label的"for"属性一般与input的"id"属性一致(绑定)
 - form的"type"属性用于指定form的形式，默认是"text"(普通文本输入框),"radio"（单选框），"checkbox"（多选框），"password"（密码框），"file"（文档框），"submit"（提交按钮），"hidden"（隐藏）
-- - textare标签用于输入多行文本
+- textare标签用于输入多行文本
 - select标签和option标签用于展示下拉菜单，示例如下：
 ``` html
 <select>
