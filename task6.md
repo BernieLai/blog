@@ -47,7 +47,7 @@ link和@import的区别：
 把图片上传服务器，然后引用相对路径；或者直接从别的网站获取图片的网络地址
 
 ## 5.html和 css 的书写规范
-http://codeguide.bootcss.com/#html-syntax
+http://codeguide.bootcss.com/
 里面很详细，不做累述。
 
 ## 6.截图介绍 chrome 开发者工具的功能区
