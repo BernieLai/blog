@@ -1,8 +1,8 @@
-#task7
-##1.class 和 id 的使用场景?
+# task7
+## 1.class 和 id 的使用场景?
 一般原则是，类应该应用于概念相似的元素，这些元素可以出现在同一页面的多个位置，而ID应该用于不同的唯一元素上。
 
-##2.CSS选择器常见的有几种？
+## 2.CSS选择器常见的有几种？
 六种，分别是：
 - 通用选择器 *
 - 标签选择器 element
@@ -11,7 +11,7 @@
 - 伪类选择器 a:hover
 - 伪元素选择器 a::before
 
-##3.选择器的优先级是怎样的?对于复杂场景如何计算优先级？
+## 3.选择器的优先级是怎样的?对于复杂场景如何计算优先级？
 一般情况下，从高到低排列：
 1. 属性添加了!important有最高权限
 2. 作为style属性写在元素标签上的行内样式
@@ -30,7 +30,7 @@ b: id选择器
 c: 类、属性和伪类选择器
 d: 标签、伪元素选择器
 
-##4.a:link, a:hover, a:active, a:visited 的顺序是怎样的？ 为什么？
+## 4.a:link, a:hover, a:active, a:visited 的顺序是怎样的？ 为什么？
 顺序如下 a:link a:visited a:hover a:active
 原因如下：
 因为 a:visited 在链接点击过一次之后永久生效，如果放在最后会覆盖掉其他的样式，在链接访问过一次之后 a:hover 和 a:active 样式都会被覆盖。
@@ -72,7 +72,7 @@ d: 标签、伪元素选择器
 }
 <!-- id为"header"的元素后代中属性为"type="text"的input的标签 -->
 ```
-##6.列出你知道的伪类选择器
+## 6.列出你知道的伪类选择器
 E:first-child	匹配元素E的第一个子元素
 E:link	匹配所有未被点击的链接
 E:visited	匹配所有已被点击的链接
@@ -93,12 +93,12 @@ E:only-child	匹配父元素下仅有的一个子元素，等同于:first-child:
 E:only-of-type	匹配父元素下使用同种标签的唯一一个子元素，等同于:first-of-type:last-of-type或 :nth-of-type(1):nth-last-of-type(1)
 E:not(selector)	匹配不符合当前选择器的任何元素
 
-##7. div:first-child、div:first-of-type、div :first-child和div :first-of-type的作用和区别?
+## 7. div:first-child、div:first-of-type、div :first-child和div :first-of-type的作用和区别?
 div:first-child 属于其父元素的第一个子元素而且是div的元素
 div: first-of-style 属于其父元素所有子元素中首个div元素
 div :first-child是选择所有div元素中属于其父元素的首个子元素
 div :first-of-type 是选择所有div元素中属于其父元素的首个该类型的子元素
-##8.解释效果呈现的原因
+## 8.解释效果呈现的原因
 aa字体为红色： 
 .item1:first-child  匹配元素item1的第一个子元素 aa，所以为颜色变为红色
 aa bb的背景色为蓝色：
