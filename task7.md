@@ -91,8 +91,8 @@ E:first-child       匹配父元素下第一个子元素
 ## 7. div:first-child、div:first-of-type、div :first-child和div :first-of-type的作用和区别?
 - div:first-child 属于其父元素的第一个子元素而且是div的元素
 - div: first-of-style 属于其父元素所有子元素中首个div元素
-- div :first-child是选择所有div元素中属于其父元素的首个子元素
-- div :first-of-type 是选择所有div元素中属于其父元素的首个该类型的子元素
+- div :first-child是选择所有div元素内所有元素中属于其父元素的首个子元素
+- div :first-of-type 是选择所有div元素内所有元素中属于其父元素的首个该类型的子元素
 ## 8.解释效果呈现的原因
 - aa字体为红色： 
 .item1:first-child  匹配元素item1的第一个子元素 aa，所以为颜色变为红色
