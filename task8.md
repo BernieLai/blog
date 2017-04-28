@@ -25,9 +25,9 @@ font-variant、font-weight、text- decoration、text-transform、direction
 [实现一个三角形](http://js.jirengu.com/lomucejocu/1/edit)
 ## 5.单行文本溢出加 ...如何实现?
 ```css
-overflow: hidden;  /*多余的文字变成...*/
-text-overflow: ellipsis; /*超过边框的文字隐藏*/
 white-space: nowrap;/*文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止*/
+text-overflow: ellipsis; /*超过边框的文字隐藏*/
+overflow: hidden;  /*多余的文字变成...*/
 ```
 ## 6.px, em, rem 有什么区别?
 px：像素
@@ -41,5 +41,5 @@ body{
 ```
 代码作用是设置字体大小12px、行高1.5和字体  
 有的字体名称中间有空格，加引号是为了不让浏览器认为这是2种字体，例子 'Hiragino Sans GB'  
-'\5b8b\4f53'是Unicode码编号，表示“宋体”;在控制用escape()函数可以查看对应的Unicode码
+'\5b8b\4f53' 是Unicode码编号，表示“宋体”;在控制用escape()函数可以查看对应的Unicode码
 ## 代码题：
