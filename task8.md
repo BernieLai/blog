@@ -26,8 +26,8 @@ font-variant、font-weight、text- decoration、text-transform、direction
 ## 5.单行文本溢出加 ...如何实现?
 ```css
 white-space: nowrap;/*文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止*/
-text-overflow: ellipsis; /*超过边框的文字隐藏*/
 overflow: hidden;  /*多余的文字变成...*/
+text-overflow: ellipsis; /*超过边框的文字隐藏*/
 ```
 ## 6.px, em, rem 有什么区别?
 px：像素
@@ -43,3 +43,8 @@ body{
 有的字体名称中间有空格，加引号是为了不让浏览器认为这是2种字体，例子 'Hiragino Sans GB'  
 '\5b8b\4f53' 是Unicode码编号，表示“宋体”;在控制用escape()函数可以查看对应的Unicode码
 ## 代码题：
+- [第一题](http://js.jirengu.com/xewesukoto/4/edit?html,css,output)
+- [第二题](http://js.jirengu.com/vacawicafu/3/edit?html,css,output)
+- [第三题](http://js.jirengu.com/hijuvusune/6/edit?html,css,output)
+- [第四题](http://js.jirengu.com/cizurojupu/1/edit?html,css,output)
+- [第五题](http://js.jirengu.com/tuwecarivi/1/edit?html,css,output)
