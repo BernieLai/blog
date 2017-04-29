@@ -24,4 +24,4 @@ CSS精灵图，是一种网页图片应用处理方式，将小图标合并在�
 - display:none 消失，不占据位置
 ## 代码题
 [第一题](http://js.jirengu.com/soquyuvoje/2/edit?html,css,output)  
-![第二题](https://github.com/BernieLai/blog/blob/master/task9/demo2.jpg?raw=true)
+[第二题](https://github.com/BernieLai/blog/blob/master/task9/demo2.jpg?raw=true)
