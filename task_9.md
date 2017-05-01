@@ -20,7 +20,7 @@ CSS精灵图，是一种网页图片应用处理方式，将小图标合并在�
 这么做是因为每一次对图片的加载都会降低web的性能，这样可以减少网络请求,减轻服务器压力
 ## 7.让一个元素"看不见"有几种方式？有什么区别?
 - opacity:0 变透明，仍占据空间
-- vidibility:hidden 隐藏，仍占据空间
+- visibility:hidden 隐藏，仍占据空间
 - display:none 消失，不占据位置
 ## 代码题
 [第一题](http://js.jirengu.com/soquyuvoje/2/edit?html,css,output)  
