@@ -4,22 +4,69 @@
 	<meta charset="UTF-8">
 	<title>t10_d2</title>
 	<style>
-		
+		.form{
+			width: 600px;
+			margin: 30px auto;
+			border:1px solid #eee;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+		}
+		h2{
+			color: white;
+			background-color: #009688;
+			padding: 10px;
+			margin: 0 0 20px;
+		}
+		form{
+			color: #757575;
+			margin:20px;
+		}
+		input[type=text], textarea{
+			display: block;
+			width: 100%;
+			border: none;
+			outline: none;
+			padding: 12px 0px 0px;
+			border-bottom: 1px solid #757575;
+		}
+		form>div{
+			margin: 10px 0;
+		}
+		.mess:after{
+			content:'';
+            display: block;
+            clear: both;
+		}
+		.hobby,.gender{
+			float: left;
+			width: 45%;
+			/*border: 1px solid;*/
+		}
+		input[type=submit]{
+			padding: 8px 16px;
+			border: none;
+			color: #fff;
+			background-color: #009688;
+		}
+	
 	</style>
 </head>
 <body>
 	<div class="form">
-		<h2>姓名收集表</h2>
+		<h2>信息收集表</h2>
 	<form action="">
 		<div class="name">
 			<label for="name">姓名</label>
-			<input type="text" id="name" placeholder="请输入姓名">
+			<br>
+			<input type="text" id="name">
 		</div>
 		<div class="qq">
 			<label for="qq">QQ</label>
-			<input type="text" id="qq" placeholder="请输入QQ">
+			<br>
+			<input type="text" id="qq">
 		</div>
 		<div class="text">
+		<label for="name">想说的话</label>
+		<br>
 		<textarea name="words" id="words" cols="30" rows="4"></textarea>
 		</div>
 		<div class="mess">
