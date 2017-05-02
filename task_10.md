@@ -42,7 +42,16 @@ BFC的作用：
 两个外边距都是负数，取两者之间绝对值较大者  
 当两个外边距一正一负时，取两者的和
 ## Code
-- 
-- 
-- 
-- 
+- 第一题:  
+[代码地址](https://github.com/BernieLai/blog/blob/master/task10/t10_d1.html)  
+[预览地址](https://bernielai.github.io/blog/task10/t10_d1)
+- 第二题：  
+[代码地址](https://github.com/BernieLai/blog/blob/master/task10/t10_d2.html)  
+[预览地址](https://bernielai.github.io/blog/task10/t10_d2)
+- 第三题：  
+[代码地址](https://github.com/BernieLai/blog/blob/master/task10/t10_d3.html)  
+[预览地址](https://bernielai.github.io/blog/task10/t10_d3)
+- 第四题：  
+[代码地址](https://github.com/BernieLai/blog/blob/master/task10/t10_d4.html)  
+[预览地址](https://bernielai.github.io/blog/task10/t10_d4)
+
