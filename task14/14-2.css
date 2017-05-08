@@ -1,0 +1,131 @@
+
+bdoy{
+	font-family: "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+	}
+
+.layout{
+	width: 900px;
+	margin: 40px auto 0;
+	line-height: 2em;
+}
+
+div,p,ul,h4,h3{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+span{
+	color: gray;
+}
+
+#head:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.info{
+	width: 45%;
+	float: left;
+}
+.info img{
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+.info .name{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 60px;
+}
+
+.contact{
+	width: 45%;
+	float: right;
+}
+
+section h3{
+	border-bottom: 1px solid #ccc;
+    width: 300px;
+}
+
+.contact h3{
+	border-bottom: 5px solid;
+}
+
+.content{
+  border-left: 1px solid black;
+  margin-left: 10px;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+
+#footer:after{
+	content: "";
+    display: block;
+    clear: both;
+}
+
+#footer .extra{
+    width: 40%;
+    float: left;
+}
+
+#footer .skill{
+    width: 40%;
+    float: right;
+}
+
+.skill ul{
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.content>h4:before {
+  content:"";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: black;
+  border-radius: 50%;
+  margin-left: -38px;
+  margin-right: 23px;
+}
+/* iconfont阿里 */
+@font-face {font-family: "iconfont";
+  src: url('./iconfont.eot?t=1494247370145'); /* IE9*/
+  src: url('./task14/iconfont.eot?t=1494247370145#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./task14/iconfont.woff?t=1494247370145') format('woff'), /* chrome, firefox */
+  url('./iconfont.ttf?t=1494247370145') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('./iconfont.svg?t=1494247370145#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.icon {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.extra li:before{
+    content:"●";
+    display: inline-block;
+    float: left;
+}
+.skill li:before{
+    content:"●";
+    display: inline-block;
+    float: left;
+    margin-right: 30px;
+} 
+.extra h4,.extra p {
+    margin-left: 40px; 
+}
+.skill li {
+    padding-bottom: 20px;
+}
