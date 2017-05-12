@@ -1,0 +1,223 @@
+body, section, h2{
+	font-family:'Microsoft Yahei', sans-serif;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+ul,li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
+nav{
+	background-color: #fed136;
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+	overflow: hidden;
+}
+
+nav img{
+	float: left;
+	width: 90px;
+	margin: 4px 150px;
+}
+nav ul{
+	float: right;
+	margin-right: 150px;
+}
+nav li{
+	float: left;
+    font-size: 26px;
+    margin: 16px 24px 0 0;
+    text-transform: uppercase;
+}
+
+.header{
+	background: url(./main.jpg) no-repeat 0 -8px;
+	height: 820px;
+	color: #fff;
+}
+
+.header h2{
+    font-style: italic;
+	margin-top: 0;
+	font-size: 40px;
+    line-height: 40px;
+	padding-top: 400px;
+}
+
+.header a{
+	display: inline-block;
+	background-color: #fed136;
+	font-size: 18px;
+	padding: 12px;
+	border-radius: 6px;
+	margin-top: 16px;
+}
+
+.title{
+    padding-top: 80px; 
+}
+.title h2{
+	color: #333;
+	font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px
+}
+.title p{
+	font-style: italic;
+	color: #777;
+	font-weight: 400;
+    margin-bottom: 75px
+}
+
+#player img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-bottom: 16px;
+}
+
+#player li, #highlight li{
+	float: left;
+	width: 33%;
+	margin-top: 16px;
+}
+li h2{
+	color: #333;
+	font-size: 30px;
+}
+li p{
+	font-style: italic;
+	color: #777;
+	font-weight: 400;
+}
+section::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#highlight{
+	background-color: #F7F7F7;
+}
+
+#highlight img{
+	height: 260px;
+	margin-bottom: 16px;
+	border-radius: 20px;
+}
+
+img:hover{
+	cursor: pointer;
+	opacity: 0.85;
+}
+#fame img{
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	margin-bottom: 16px;
+	border: 4px solid #F7F7F2;
+}
+
+#fame ul{
+	max-width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+#fame li{
+	position: relative;
+	padding-bottom: 100px;
+}
+#fame li:nth-child(odd) div{
+	position: absolute;
+	left: 20px;
+	top: 10px;
+	width: 30em;
+}
+#fame li:nth-child(even) div{
+	position: absolute;
+	right: 80px;
+	top: 10px;
+	width: 20em;
+}
+#fame li::after{
+	content: "";
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	border-left: 2px solid #fed136;
+	height: 100%;
+	z-index: -1;
+}
+
+#contact {
+	background:url(./playoffs.jpg)  no-repeat 0 -36px;
+	background-size: cover;
+	height: 600px;
+}
+#contact h2{
+	color: white;
+}
+#contact p{
+	color: #fed136;
+	margin-bottom: 150px;
+}
+#contact .table{
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.table::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.info-left{
+	float: left;
+	width: 50%;
+}
+.info-left input{
+	width: 90%;
+	line-height: 40px;
+	margin-bottom: 10px;
+	padding: 4px 12px;
+	font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    outline: none;
+}
+.info-right{
+	float: right;
+	width: 50%;
+}
+.info-right textarea {
+	width: 90%;
+	padding: 4px 12px;
+	font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    outline: none;
+}
+button{
+	display: inline-block;
+    width: 223px;
+    height: 69px;
+    background-color: #FDD048;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: 16px;
+    outline: none;
+}
