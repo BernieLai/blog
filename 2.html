@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        ul, li{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .demo1{
+            width: 420px;
+            height: 240px;
+            margin: 36px auto;
+            padding: 20px 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .tabs{
+            border-bottom: 1px solid #ccc;
+        }
+
+        .tabs::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .tabs>li{
+            float: left;
+            border-top: 1px solid transparent;
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .tabs .active{
+            color: pink;
+            border: 1px solid #ccc;
+            border-bottom: 1px solid #fff;
+            border-radius: 6px 6px 0 0;
+            margin-bottom: -1px;
+        }
+
+        .panels{
+            padding: 20px 10px;
+        }
+
+        .panels>li{
+            display: none;
+        }
+
+        .panels .on{
+            display: block;
+        }
+        /* demo2代码 */
+
+       .none{
+            display: none;
+        }  
+
+        .bg{
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0.9;
+            background-color: #ccc;
+            z-index: 98;
+        }
+
+        .dialog{
+            width: 420px;
+            height: 180px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 10px 20px;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 99;
+        }
+
+        .head p{
+            font-weight: bold;
+            float: left;
+            margin: 0 0 16px 0;
+        }
+        .head span{
+            font-weight: bold;
+            float: right;
+            cursor: pointer;
+        }
+        .head::after{
+            border-bottom: 1px solid #ccc;
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .option span{
+            float: right; 
+            margin-left: 1px;
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+        .option::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="demo1">
+        <ul class="tabs">
+            <li class="active">tab1</li>
+            <li>tab2</li>
+            <li>tab3</li>
+        </ul>
+        <ul class="panels">
+            <li class="on">ONE!!!</li>
+            <li>TWO!!!</li>
+            <li>THREE!!!</li>
+        </ul>
+    </div>
+    <hr>
+
+    <div class="demo2">
+    <button> Click</button>
+        <div id="box" class="none">
+        <div class="bg"></div>
+        <div class="dialog">
+            <div class="info-active">
+                <div class="head">
+                    <p>我是标题</p>
+                    <span>X</span>
+                </div>          
+                <p>我是内容1</p>
+                <p>我是内容2</p>
+                <hr>
+                <div class="option">
+                    <span>取消</span>
+                    <span>确定</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script>
+        var tab = document.querySelector('.tabs'),
+        tabsli = document.querySelectorAll('.tabs>li'),
+        panelsli = document.querySelectorAll('.panels>li');
+        tab.addEventListener('mouseover', function(e) {
+            if (e.target.tagName.toLowerCase() === 'li'){
+                [].forEach.call(tabsli, function (li) {
+                    li.classList.remove('active');
+                });
+                e.target.classList.add('active');
+                [].forEach.call(panelsli, function (li) {
+                    li.classList.remove('on');
+                });
+                var index = [].indexOf.call(tabsli, e.target);
+                panelsli[index].classList.add('on');
+            }
+
+        }, false);
+        //demo2 代码
+        var click = document.querySelector('button'),
+        box = document.querySelector('#box'),
+        dialog = document.querySelector('.dialog'),
+        bg = document.querySelector('.bg');;
+
+        click.addEventListener('click', function (e){
+            box.classList.remove('none');
+        }, false);
+
+        dialog.addEventListener('click', function (e) {
+            //e.stopPropagation();
+            if(e.target.innerText === 'X' || e.target.innerText === '取消'){
+                 box.classList.add('none');
+            }
+        }, false);
+
+        bg.addEventListener('click', function (e) {
+            box.classList.add('none');
+        }, false);
+
+
+    </script>
+</body>
+</html>
